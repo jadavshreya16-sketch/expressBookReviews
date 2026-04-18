@@ -1,53 +1,56 @@
-curl http://localhost:3000/
+curl -X GET http://localhost:3000/
+
+
+
 {
   "1": {
-    "title": "The Great Gatsby",
-    "author": "F. Scott Fitzgerald",
+    "author": "Chinua Achebe",
+    "title": "Things Fall Apart",
     "reviews": {}
   },
   "2": {
-    "title": "To Kill a Mockingbird",
-    "author": "Harper Lee",
+    "author": "Hans Christian Andersen",
+    "title": "Fairy tales",
     "reviews": {}
   },
   "3": {
-    "title": "1984",
-    "author": "George Orwell",
+    "author": "Dante Alighieri",
+    "title": "The Divine Comedy",
     "reviews": {}
   },
   "4": {
-    "title": "Pride and Prejudice",
-    "author": "Jane Austen",
+    "author": "Unknown",
+    "title": "The Epic Of Gilgamesh",
     "reviews": {}
   },
   "5": {
-    "title": "Moby Dick",
-    "author": "Herman Melville",
+    "author": "Unknown",
+    "title": "The Book Of Job",
     "reviews": {}
   },
   "6": {
-    "title": "War and Peace",
-    "author": "Leo Tolstoy",
+    "author": "Unknown",
+    "title": "One Thousand and One Nights",
     "reviews": {}
   },
   "7": {
-    "title": "The Hobbit",
-    "author": "J.R.R. Tolkien",
+    "author": "Unknown",
+    "title": "Nj\u00e1l's Saga",
     "reviews": {}
   },
   "8": {
-    "title": "Crime and Punishment",
-    "author": "Fyodor Dostoevsky",
+    "author": "Jane Austen",
+    "title": "Pride and Prejudice",
     "reviews": {}
   },
   "9": {
-    "title": "The Catcher in the Rye",
-    "author": "J.D. Salinger",
+    "author": "Honor\u00e9 de Balzac",
+    "title": "Le P\u00e8re Goriot",
     "reviews": {}
   },
   "10": {
-    "title": "Brave New World",
-    "author": "Aldous Huxley",
+    "author": "Samuel Beckett",
+    "title": "Molloy, Malone Dies, The Unnamable, the trilogy",
     "reviews": {}
   }
 }
