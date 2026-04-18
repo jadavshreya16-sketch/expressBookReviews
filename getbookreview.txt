@@ -1,5 +1,8 @@
-curl http://localhost:3000/review/1
+curl -X GET http://localhost:3000/review/1
+
+
 {
+  "status": "success",
   "reviews": {
     "user1": "Excellent read!",
     "user2": "Very interesting book"
