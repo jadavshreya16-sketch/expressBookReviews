@@ -1,7 +1,7 @@
 curl http://localhost:3000/review/1
 {
   "reviews": {
-    "user1": "Great book!",
-    "user2": "Highly recommended"
+    "user1": "Excellent read!",
+    "user2": "Very interesting book"
   }
 }
