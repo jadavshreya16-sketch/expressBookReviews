@@ -4,7 +4,7 @@ const axios = require('axios');
 async function getAllBooks() {
   try {
     const response = await axios.get('http://localhost:3000/');
-    console.log(response.data);
+    return response.data;
   } catch (error) {
     console.error(error);
   }
@@ -14,27 +14,27 @@ async function getAllBooks() {
 async function getBookByISBN(isbn) {
   try {
     const response = await axios.get(`http://localhost:3000/isbn/${isbn}`);
-    console.log(response.data);
+    return response.data;
   } catch (error) {
     console.error(error);
   }
 }
 
-// Get books by author
+// Get books by Author
 async function getBooksByAuthor(author) {
   try {
     const response = await axios.get(`http://localhost:3000/author/${author}`);
-    console.log(response.data);
+    return response.data;
   } catch (error) {
     console.error(error);
   }
 }
 
-// Get books by title
+// Get books by Title
 async function getBooksByTitle(title) {
   try {
     const response = await axios.get(`http://localhost:3000/title/${title}`);
-    console.log(response.data);
+    return response.data;
   } catch (error) {
     console.error(error);
   }
