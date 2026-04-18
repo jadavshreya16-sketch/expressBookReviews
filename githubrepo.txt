@@ -1,8 +1,8 @@
-curl https://api.github.com/repos/YOUR-USERNAME/expressBookReview
+curl https://api.github.com/repos/jadavshreya16-sketch/expressBookReviews
 {
   "id": 123456,
-  "name": "expressBookReview",
-  "full_name": "YOUR-USERNAME/expressBookReview",
+  "name": "expressBookReviews",
+  "full_name": "jadavshreya16-sketch/expressBookReviews",
   "fork": true,
   "parent": {
     "full_name": "ibm-developer-skills-network/expressBookReview"
