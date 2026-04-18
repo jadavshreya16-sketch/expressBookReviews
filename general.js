@@ -6,7 +6,7 @@ async function getAllBooks() {
     const response = await axios.get('http://localhost:3000/');
     return response.data;
   } catch (error) {
-    console.error("Error fetching books:", error.message);
+    return { message: "Error fetching books" };
   }
 }
 
@@ -15,17 +15,17 @@ async function getBookByISBN(isbn) {
   try {
     const response = await axios.get(`http://localhost:3000/isbn/${isbn}`);
     
-    if (!response.data) {
+    if (!response.data || Object.keys(response.data).length === 0) {
       return { message: "Book not found" };
     }
 
     return response.data;
   } catch (error) {
-    console.error("Error fetching book by ISBN:", error.message);
+    return { message: "Error fetching book by ISBN" };
   }
 }
 
-// Get books by Author
+// Get books by author
 async function getBooksByAuthor(author) {
   try {
     const response = await axios.get(`http://localhost:3000/author/${author}`);
@@ -36,11 +36,11 @@ async function getBooksByAuthor(author) {
 
     return response.data;
   } catch (error) {
-    console.error("Error fetching books by author:", error.message);
+    return { message: "Error fetching books by author" };
   }
 }
 
-// Get books by Title
+// Get books by title
 async function getBooksByTitle(title) {
   try {
     const response = await axios.get(`http://localhost:3000/title/${title}`);
@@ -51,7 +51,7 @@ async function getBooksByTitle(title) {
 
     return response.data;
   } catch (error) {
-    console.error("Error fetching books by title:", error.message);
+    return { message: "Error fetching books by title" };
   }
 }
 
