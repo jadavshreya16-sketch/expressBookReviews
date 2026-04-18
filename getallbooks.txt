@@ -1,0 +1,15 @@
+curl http://localhost:3000/
+{
+  "books": {
+    "1": {
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "reviews": {}
+    },
+    "2": {
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "reviews": {}
+    }
+  }
+}
