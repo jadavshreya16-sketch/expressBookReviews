@@ -3,8 +3,9 @@ curl -X PUT http://localhost:3000/review/1 \
 -d "{\"review\":\"Amazing book!\"}"
 
 {
-  "message": "Review added/updated successfully",
-  "reviews": {
+  "status": "success",
+  "message": "Review added or updated successfully",
+  "review": {
     "testuser": "Amazing book!"
   }
 }
